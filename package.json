@@ -6,6 +6,8 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
+    "object-assign": "^4.1.0",
+    "randomcolor": "^0.4.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "recharts": "^0.15.2"
@@ -14,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && surge -p build"
   }
 }
